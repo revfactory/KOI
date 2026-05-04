@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source AI Course Markdown"
+  short_description: "source.txt 기반 교육 문서·강의자료 작성"
+  default_prompt: "Use $open-source-ai-course-md to turn source.txt into Korean Markdown education planning, curriculum, and lecture materials."
