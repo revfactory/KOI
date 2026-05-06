@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>1회차 — AI 시대의 오픈소스</title>
+  <meta name="description" content="6주 오픈소스 x AI 강의 1회차 발표자료. 핵심 메시지 — 오픈소스는 코드 공개가 아니라 AI 시대의 학습·협업·커리어·제품 확산 방식이다.">
+  <meta name="theme-color" content="#0a0e1a">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@latest/css/jetbrains-mono.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/slides.css">
+</head>
+<body>
+  <div id="progress" class="deck-progress" aria-hidden="true"></div>
+
+  <main id="deck" aria-label="발표 슬라이드 — 1회차 AI 시대의 오픈소스">
+
+    <!-- s01 — Cover -->
+    <section class="slide" data-id="s01" data-kind="cover" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 1 — 표지">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <div class="slide-display">
+        <div class="slide-display-image">
+          <img src="assets/img/s01.png" alt="" loading="eager" width="1536" height="1024">
+        </div>
+        <span class="display-eyebrow">1회차 · 2026-05-06</span>
+        <h1>AI 시대의 오픈소스</h1>
+        <p class="display-subtitle">왜 지금 다시 중요한가</p>
+        <p class="display-message">오픈소스는 코드 공개가 아니라 AI 시대의 학습·협업·커리어·제품 확산 방식이다.</p>
+      </div>
+      <footer class="slide-footer">
+        <span class="slide-num">1 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s02 — Quote -->
+    <section class="slide" data-id="s02" data-kind="quote" data-reveal-steps="2" aria-roledescription="slide" aria-label="슬라이드 2 — 침묵에서 출발">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content" style="display: grid; gap: var(--s-3);">
+          <span class="slide-eyebrow">도입 · 0:00~0:05</span>
+          <h2 class="slide-title">침묵에서 출발</h2>
+          <p class="slide-subtitle">내가 매일 쓰는 코드의 출처</p>
+          <ul class="slide-body">
+            <li data-step="1">마지막으로 <code>npm install</code> 또는 <code>pip install</code> 한 라이브러리 이름은?</li>
+            <li data-step="2">그 라이브러리를 만든 사람·이유·라이선스를 1분 안에 설명할 수 있나?</li>
+          </ul>
+          <p class="slide-footer-note">오늘은 이 침묵에서 출발한다.</p>
+        </div>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">2 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s03 — LO bullets -->
+    <section class="slide" data-id="s03" data-kind="bullets" data-reveal-steps="3" aria-roledescription="slide" aria-label="슬라이드 3 — 학습 목표">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <span class="slide-eyebrow">학습 목표 · 0:05~0:10</span>
+        <h2 class="slide-title">오늘의 LO 3개</h2>
+        <p class="slide-subtitle">이 회차가 끝나면 학생은</p>
+        <ul class="slide-body">
+          <li data-step="1">2025 오픈소스 생태계 변화 3가지를 자기 언어로 설명한다.</li>
+          <li data-step="2">GitHub Trending 인기 프로젝트를 5개 축으로 분석할 수 있다.</li>
+          <li data-step="3">6주 동안 따라갈 후보 OSS(오픈소스) 3개를 손에 쥔다.</li>
+        </ul>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">3 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s04 — 6-week flow -->
+    <section class="slide" data-id="s04" data-kind="concept" data-reveal-steps="6" aria-roledescription="slide" aria-label="슬라이드 4 — 6주 흐름">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content">
+          <span class="slide-eyebrow">6주 흐름</span>
+          <h2 class="slide-title">이 강의는 워크숍이다</h2>
+          <p class="slide-subtitle">매주 GitHub에 흔적이 쌓인다</p>
+          <ul class="slide-body">
+            <li data-step="1"><strong>1주</strong> 후보 3개 + 팀 헌법</li>
+            <li data-step="2"><strong>2주</strong> 팀 저장소 + 첫 머지 PR</li>
+            <li data-step="3"><strong>3주</strong> LICENSE + CONTRIBUTING + Templates</li>
+            <li data-step="4"><strong>4주</strong> 본격 PR 1개 + AI 사용 로그</li>
+            <li data-step="5"><strong>5주</strong> 멀티 에이전트 PR + 발표 초안</li>
+            <li data-step="6"><strong>6주</strong> 정돈된 프로필 + 다음 기여 약속</li>
+          </ul>
+        </div>
+        <figure class="slide-image">
+          <img src="assets/img/s04.png" alt="" loading="lazy" width="1024" height="1024">
+        </figure>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">4 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s05 — Octoverse -->
+    <section class="slide" data-id="s05" data-kind="quote" data-reveal-steps="4" aria-roledescription="slide" aria-label="슬라이드 5 — Octoverse">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card" style="grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--s-5); align-items: center;">
+        <div class="slide-content" style="display: grid; gap: var(--s-3);">
+          <span class="slide-eyebrow">데이터 · 0:10~0:25</span>
+          <h2 class="slide-title">Octoverse 2025 헤드라인</h2>
+          <p class="slide-subtitle">GitHub Blog · 2025-10-28</p>
+          <ul class="slide-body">
+            <li data-step="1">1초마다 신규 개발자 1명이 GitHub에 가입</li>
+            <li data-step="2">2025년에만 36M+ 신규</li>
+            <li data-step="3">TypeScript가 1위 언어가 됐다</li>
+            <li data-step="4">Copilot 코딩 에이전트는 5개월간 1M+ Pull Request(풀 리퀘스트, PR)를 만졌다</li>
+          </ul>
+          <p class="slide-footer-note">출처 — github.blog/news-insights/octoverse</p>
+        </div>
+        <figure class="slide-image">
+          <img src="assets/img/s05.png" alt="" loading="lazy" width="1024" height="1024">
+        </figure>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">5 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s06 — Compare past vs AI era -->
+    <section class="slide" data-id="s06" data-kind="compare" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 6 — 과거 vs AI 시대">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content" style="display: grid; gap: var(--s-3);">
+          <span class="slide-eyebrow">변화</span>
+          <h2 class="slide-title">과거 vs AI 시대 오픈소스</h2>
+          <p class="slide-subtitle">5개 축에서 무엇이 달라졌나</p>
+          <div class="slide-compare">
+            <div class="slide-compare-col">
+              <h3>과거</h3>
+              <ul>
+                <li><strong>목적</strong> — 비용 절감 / 자유</li>
+                <li><strong>참여자</strong> — 시간 많은 고수</li>
+                <li><strong>도구</strong> — git + IDE</li>
+                <li><strong>단위</strong> — 코드</li>
+                <li><strong>검증</strong> — 커뮤니티 리뷰</li>
+              </ul>
+            </div>
+            <div class="slide-compare-col">
+              <h3>AI 시대</h3>
+              <ul>
+                <li><strong>목적</strong> — 학습+협업+커리어+제품 확산</li>
+                <li><strong>참여자</strong> — 매일 들어오는 신규 개발자</li>
+                <li><strong>도구</strong> — git + IDE + AI 에이전트</li>
+                <li><strong>단위</strong> — 코드+데이터+모델 weights+로그</li>
+                <li><strong>검증</strong> — 커뮤니티+AI+사람</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">6 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s07 — Concept core message -->
+    <section class="slide" data-id="s07" data-kind="concept" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 7 — 핵심 메시지">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content">
+          <span class="slide-eyebrow">오늘의 한 줄</span>
+          <h2 class="slide-title">한 문장으로 묶으면</h2>
+          <p class="slide-subtitle">이 회차의 핵심 메시지</p>
+          <p style="font-size: clamp(1.15rem, 1.9vw, 1.5rem); line-height: 1.5; padding: var(--s-3) var(--s-3); border-left: 4px solid var(--accent-primary); background: rgba(124,92,255,0.08); border-radius: 0 var(--radius-image) var(--radius-image) 0; font-weight: 600;">
+            오픈소스는 코드 공개가 아니라 AI 시대의 학습·협업·커리어·제품 확산 방식이다.
+          </p>
+        </div>
+        <figure class="slide-image">
+          <img src="assets/img/s07.png" alt="" loading="lazy" width="1024" height="1024">
+        </figure>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">7 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s08 — 5-axis intro -->
+    <section class="slide" data-id="s08" data-kind="concept" data-reveal-steps="4" aria-roledescription="slide" aria-label="슬라이드 8 — Trending 5축 분석">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content">
+          <span class="slide-eyebrow">실습 · 0:25~0:55</span>
+          <h2 class="slide-title">Trending 5축 분석</h2>
+          <p class="slide-subtitle">30분 페어 워크 — 인기는 곧 좋음이 아니다</p>
+          <ul class="slide-body">
+            <li data-step="1">README · Issues · Pull Requests · Releases · License</li>
+            <li data-step="2">별 수가 많은 프로젝트도 5축이 비어 있을 수 있다</li>
+            <li data-step="3">한 페어 = 한 슬라이드 / 한 포스트잇으로 압축</li>
+            <li data-step="4">갤러리 워크 4분 → 한 팀 30초 한 줄 공유 → 30초 전이</li>
+          </ul>
+        </div>
+        <figure class="slide-image">
+          <img src="assets/img/s08.png" alt="" loading="lazy" width="1024" height="1024">
+        </figure>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">8 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s09 — 5축 양식 -->
+    <section class="slide" data-id="s09" data-kind="bullets" data-reveal-steps="5" aria-roledescription="slide" aria-label="슬라이드 9 — 5축 양식">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <span class="slide-eyebrow">양식</span>
+        <h2 class="slide-title">5축으로 무엇을 보나</h2>
+        <p class="slide-subtitle">한 페어가 한 페이지에 담을 것</p>
+        <ul class="slide-body">
+          <li data-step="1"><strong>README</strong> — 5분 안에 무엇·왜·어떻게가 보이나</li>
+          <li data-step="2"><strong>Issues</strong> — 응답 속도, good-first-issue 라벨 유무</li>
+          <li data-step="3"><strong>Pull Requests</strong> — 변경 요약 · 이슈 링크 · 체크리스트</li>
+          <li data-step="4"><strong>Releases</strong> — CHANGELOG와 마이그레이션 가이드</li>
+          <li data-step="5"><strong>License</strong> — 회사 제품에 써도 되는지 1줄 답</li>
+        </ul>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">9 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s10 — AI tools compare -->
+    <section class="slide" data-id="s10" data-kind="compare" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 10 — AI 도구 비교">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content" style="display: grid; gap: var(--s-3);">
+          <span class="slide-eyebrow">AI 도구 · 1:00~1:15</span>
+          <h2 class="slide-title">학생 무료 옵션 중심 비교</h2>
+          <p class="slide-subtitle">1주차 끝까지 손에 쥘 도구 1개</p>
+          <div class="slide-compare">
+            <div class="slide-compare-col">
+              <h3>클로즈드(무료 티어)</h3>
+              <ul>
+                <li><strong>GitHub Copilot</strong> — Free / Student Pack</li>
+                <li><strong>Claude</strong> — claude.ai 무료 티어</li>
+                <li><strong>Cursor</strong> — 무료 티어</li>
+                <li><strong>Gemini Code Assist</strong> — 개인 무료</li>
+              </ul>
+            </div>
+            <div class="slide-compare-col">
+              <h3>오픈소스</h3>
+              <ul>
+                <li><strong>Continue.dev</strong> — Apache-2.0, BYOM</li>
+                <li><strong>Aider</strong> — Apache-2.0, CLI 자동화</li>
+                <li><strong>공통 룰</strong> — AI 제안은 사람이 검증</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">10 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s11 — Code -->
+    <section class="slide" data-id="s11" data-kind="code" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 11 — AI 후보 분석 프롬프트">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <span class="slide-eyebrow">프롬프트</span>
+        <h2 class="slide-title">AI 후보 분석 프롬프트</h2>
+        <p class="slide-subtitle">방금 분석한 README를 AI에 붙이고</p>
+        <div class="slide-code">
+<pre>다음 GitHub 저장소의 README를 보고 두 가지를 답해줘.
+
+1. 이 프로젝트가 무엇을 하는지 한 줄 요약.
+2. 처음 기여하려는 사람이 시도해볼 만한 진입점 3개
+   (이슈 라벨, 문서 보강, 작은 버그 수정 등).
+
+저장소: [앞 실습에서 고른 프로젝트 URL]
+
+README:
+[README 본문 또는 핵심 단락 복붙]</pre>
+        </div>
+        <p class="slide-footer-note">AI 출력은 그대로 믿지 말 것 — 사람 검증 1줄을 반드시 덧붙인다.</p>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">11 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s12 — Team constitution -->
+    <section class="slide" data-id="s12" data-kind="concept" data-reveal-steps="4" aria-roledescription="slide" aria-label="슬라이드 12 — 팀 헌법">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <article class="slide-card">
+        <div class="slide-content">
+          <span class="slide-eyebrow">팀 헌법 · 1:15~1:25</span>
+          <h2 class="slide-title">10분 안에 1페이지로</h2>
+          <p class="slide-subtitle">3~5인 팀 + 4항목</p>
+          <ul class="slide-body">
+            <li data-step="1"><strong>역할</strong> — Maintainer / Contributor / Docs / AI</li>
+            <li data-step="2"><strong>회의 주기</strong> — 주 N회 / 시간 / 장소·도구</li>
+            <li data-step="3"><strong>의사결정</strong> — 만장일치 / 다수결 / 메인테이너 결정</li>
+            <li data-step="4"><strong>이탈 처리</strong> — 합병 / 솔로 전환 / 충원</li>
+          </ul>
+          <p class="slide-footer-note">한 줄 비전 — 6주 후 우리 팀이 자랑하고 싶은 흔적.</p>
+        </div>
+        <figure class="slide-image">
+          <img src="assets/img/s12.png" alt="" loading="lazy" width="1024" height="1024">
+        </figure>
+      </article>
+      <footer class="slide-footer">
+        <span class="slide-num">12 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+    <!-- s13 — Closing -->
+    <section class="slide" data-id="s13" data-kind="closing" data-reveal-steps="0" aria-roledescription="slide" aria-label="슬라이드 13 — 마무리">
+      <div class="slide-bg" data-anim="gradient-mesh" aria-hidden="true"></div>
+      <div class="slide-display">
+        <div class="slide-display-image">
+          <img src="assets/img/s13.png" alt="" loading="lazy" width="1536" height="1024">
+        </div>
+        <span class="display-eyebrow">마무리 · 1:25~1:30</span>
+        <h1>후보 3개를 손에 쥐었다</h1>
+        <p class="display-subtitle">다음 주에는 그중 하나에 깃발을 꽂는다</p>
+        <p class="display-message">오픈소스는 코드 공개가 아니라 AI 시대의 학습·협업·커리어·제품 확산 방식이다.</p>
+        <p class="slide-footer-note" style="border: 0; color: var(--fg-muted); margin-top: var(--s-2);">2회차 — Issue · Branch · Commit · Pull Request · Review</p>
+      </div>
+      <footer class="slide-footer">
+        <span class="slide-num">13 / 13</span>
+        <span class="slide-track">1회차 · AI 시대의 오픈소스</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <nav class="deck-controls" aria-label="슬라이드 컨트롤">
+    <button data-action="prev" aria-label="이전 슬라이드" title="이전 (←)">‹</button>
+    <span class="deck-counter"><span id="cur">1</span> / <span id="total">13</span></span>
+    <button data-action="next" aria-label="다음 슬라이드" title="다음 (→ / Space)">›</button>
+    <button data-action="theme" aria-label="다크/라이트 테마" title="테마 (T)">◐</button>
+    <button data-action="fullscreen" aria-label="풀스크린" title="풀스크린 (F)">⛶</button>
+    <button data-action="print" aria-label="인쇄" title="인쇄 (P)">⎙</button>
+  </nav>
+
+  <script src="assets/js/slides.js" defer></script>
+</body>
+</html>

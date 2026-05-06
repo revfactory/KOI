@@ -1,0 +1,267 @@
+{
+  "회차": 1,
+  "design_tone": "modern minimal dark + animated gradient mesh",
+  "style_prefix": "minimalist editorial illustration, soft pastel palette with indigo and violet accents, generous whitespace, dark background gradient mesh, no text inside the image, abstract geometric and metaphor-driven composition, modern minimal dark aesthetic, smooth depth, subtle glow",
+  "tool": "codex exec image_gen",
+  "batch_size": 5,
+  "total_images": 36,
+  "success_count": 36,
+  "failed_count": 0,
+  "images": [
+    {
+      "slide_id": "s001",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s001.jpg",
+      "elapsed_sec": 114.5
+    },
+    {
+      "slide_id": "s002",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s002.jpg",
+      "elapsed_sec": 110.2
+    },
+    {
+      "slide_id": "s006",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s006.jpg",
+      "elapsed_sec": 71.4
+    },
+    {
+      "slide_id": "s007",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s007.jpg",
+      "elapsed_sec": 126.0
+    },
+    {
+      "slide_id": "s009",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s009.jpg",
+      "elapsed_sec": 102.2
+    },
+    {
+      "slide_id": "s010",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s010.jpg",
+      "elapsed_sec": 86.4
+    },
+    {
+      "slide_id": "s012",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s012.jpg",
+      "elapsed_sec": 116.7
+    },
+    {
+      "slide_id": "s014",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s014.jpg",
+      "elapsed_sec": 80.4
+    },
+    {
+      "slide_id": "s015",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s015.jpg",
+      "elapsed_sec": 110.8
+    },
+    {
+      "slide_id": "s016",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s016.jpg",
+      "elapsed_sec": 77.7
+    },
+    {
+      "slide_id": "s017",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s017.jpg",
+      "elapsed_sec": 119.0
+    },
+    {
+      "slide_id": "s019",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s019.jpg",
+      "elapsed_sec": 134.3
+    },
+    {
+      "slide_id": "s021",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s021.jpg",
+      "elapsed_sec": 112.7
+    },
+    {
+      "slide_id": "s027",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s027.jpg",
+      "elapsed_sec": 82.5
+    },
+    {
+      "slide_id": "s030",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s030.jpg",
+      "elapsed_sec": 68.2
+    },
+    {
+      "slide_id": "s031",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s031.jpg",
+      "elapsed_sec": 220.7
+    },
+    {
+      "slide_id": "s038",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s038.jpg",
+      "elapsed_sec": 115.9
+    },
+    {
+      "slide_id": "s041",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s041.jpg",
+      "elapsed_sec": 95.5
+    },
+    {
+      "slide_id": "s042",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s042.jpg",
+      "elapsed_sec": 112.2
+    },
+    {
+      "slide_id": "s045",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s045.jpg",
+      "elapsed_sec": 120.4
+    },
+    {
+      "slide_id": "s047",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s047.jpg",
+      "elapsed_sec": 144.8
+    },
+    {
+      "slide_id": "s049",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s049.jpg",
+      "elapsed_sec": 117.8
+    },
+    {
+      "slide_id": "s051",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s051.jpg",
+      "elapsed_sec": 81.8
+    },
+    {
+      "slide_id": "s052",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s052.jpg",
+      "elapsed_sec": 105.9
+    },
+    {
+      "slide_id": "s053",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s053.jpg",
+      "elapsed_sec": 113.8
+    },
+    {
+      "slide_id": "s054",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s054.jpg",
+      "elapsed_sec": 107.7
+    },
+    {
+      "slide_id": "s056",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s056.jpg",
+      "elapsed_sec": 81.9
+    },
+    {
+      "slide_id": "s063",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s063.jpg",
+      "elapsed_sec": 101.0
+    },
+    {
+      "slide_id": "s065",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s065.jpg",
+      "elapsed_sec": 70.7
+    },
+    {
+      "slide_id": "s068",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s068.jpg",
+      "elapsed_sec": 98.1
+    },
+    {
+      "slide_id": "s072",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s072.jpg",
+      "elapsed_sec": 108.5
+    },
+    {
+      "slide_id": "s075",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s075.jpg",
+      "elapsed_sec": 90.0
+    },
+    {
+      "slide_id": "s076",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s076.jpg",
+      "elapsed_sec": 79.3
+    },
+    {
+      "slide_id": "s077",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s077.jpg",
+      "elapsed_sec": 72.9
+    },
+    {
+      "slide_id": "s079",
+      "status": "ok",
+      "size": "1024x1024",
+      "path": "assets/img/s079.jpg",
+      "elapsed_sec": 93.7
+    },
+    {
+      "slide_id": "s080",
+      "status": "ok",
+      "size": "1792x1024",
+      "path": "assets/img/s080.jpg",
+      "elapsed_sec": 80.1
+    }
+  ],
+  "format": "jpeg",
+  "compression": "sips quality 82, max 1280px",
+  "total_size_mb": 5.5
+}

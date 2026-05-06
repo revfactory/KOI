@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07080d">
+  <meta name="description" content="KOI 1회차 — AI 시대의 오픈소스 (80장 슬라이드)">
+  <title>KOI 1회차 · AI 시대의 오픈소스</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/slides.css">
+</head>
+<body>
+
+<!-- 배경 -->
+<div class="app-bg" aria-hidden="true"></div>
+
+<!-- 진행률 바 -->
+<div class="progress-bar" role="progressbar" aria-label="발표 진행률"></div>
+
+<!-- 우상단 컨트롤 -->
+<div class="top-controls">
+  <button class="icon-btn" data-action="menu" aria-label="점프 메뉴 (M)">≡</button>
+  <button class="icon-btn" data-action="theme" aria-label="다크/라이트 토글 (T)">◐</button>
+  <button class="icon-btn" data-action="fullscreen" aria-label="풀스크린 (F)">⛶</button>
+  <button class="icon-btn" data-action="print" aria-label="인쇄 (Cmd/Ctrl+P)">🖨</button>
+</div>
+
+<!-- 슬라이드 데크 -->
+<main class="deck" role="region" aria-label="슬라이드 데크">
+
+<!-- ============================================================ -->
+<!-- s001 cover -->
+<section class="slide" data-id="s001" data-kind="cover" data-section="opening" aria-roledescription="slide" aria-label="슬라이드 1: AI 시대의 오픈소스">
+  <figure class="slide-image"><img src="assets/img/s001.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <h1 class="slide-title">AI 시대의 오픈소스</h1>
+    <p class="slide-subtitle">1회차 — 왜 지금 다시 중요한가</p>
+    <ul class="slide-body">
+      <li>오픈소스는 코드 공개가 아니라</li>
+      <li>AI 시대의 학습·협업·커리어·제품 확산 방식이다</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s002 section · 도입 -->
+<section class="slide" data-id="s002" data-kind="section" data-section="intro" aria-roledescription="slide" aria-label="슬라이드 2: 도입">
+  <figure class="slide-image"><img src="assets/img/s002.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 1 · 0:00 — 0:03</div>
+    <h2 class="slide-title">도입</h2>
+    <p class="slide-subtitle">침묵에서 출발</p>
+    <ul class="slide-body"><li>마지막으로 설치한 라이브러리, 기억하시나요?</li></ul>
+  </div>
+</section>
+
+<!-- s003 quote -->
+<section class="slide" data-id="s003" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 3: 마지막 설치">
+  <div class="slide-card">
+    <h2 class="slide-title">마지막 설치</h2>
+    <ul class="slide-body" data-reveal-steps="1">
+      <li data-step="0">“마지막으로 npm install / pip install 한</li>
+      <li>라이브러리 이름은?”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s004 quote -->
+<section class="slide" data-id="s004" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 4: 1분 안에">
+  <div class="slide-card">
+    <h2 class="slide-title">1분 안에</h2>
+    <ul class="slide-body">
+      <li>“그 라이브러리를 만든 사람·이유·</li>
+      <li>라이선스를 1분 안에 설명할 수 있나요?”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s005 worksheet -->
+<section class="slide" data-id="s005" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 5: 30초 노트">
+  <div class="slide-card">
+    <h2 class="slide-title">30초 노트</h2>
+    <p class="slide-subtitle">핸드아웃 첫 페이지</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">최근 사용한 npm/pip 패키지: ____</li>
+      <li data-step="1">만든 사람/조직: ____ (모름 OK)</li>
+      <li data-step="2">라이선스: ____ (모름 OK)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s006 concept -->
+<section class="slide" data-id="s006" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 6: 이미 쓰고 있다">
+  <div class="slide-card">
+    <h2 class="slide-title">이미 쓰고 있다</h2>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">react · vue · next · pandas · numpy</li>
+      <li data-step="1">pytorch · transformers · langchain</li>
+      <li data-step="2">ruff · uv · prettier · jq</li>
+      <li data-step="3">→ 나는 이미 매일 OSS 위에 있다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s006.jpg" alt="기반 위에 쌓인 추상 지층" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s007 concept -->
+<section class="slide" data-id="s007" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 7: 오늘의 약속">
+  <div class="slide-card">
+    <h2 class="slide-title">오늘의 약속</h2>
+    <p class="slide-subtitle">0:03 — 0:06 · LO와 6주 흐름</p>
+    <ul class="slide-body" data-reveal-steps="2">
+      <li data-step="0">수업이 아니라 워크숍</li>
+      <li data-step="1">매주 끝나면 GitHub에 흔적이 남는다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s007.jpg" alt="새벽 지평선으로 모이는 세 갈래 길" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s008 bullets -->
+<section class="slide" data-id="s008" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 8: 오늘의 LO">
+  <div class="slide-card">
+    <h2 class="slide-title">오늘의 LO</h2>
+    <p class="slide-subtitle">끝나면 할 수 있는 것</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">LO1. 2025 OSS 변화 3가지 설명</li>
+      <li data-step="1">LO2. Trending 5축 분석</li>
+      <li data-step="2">LO3. 6주 후보 OSS 3개 확보</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s009 bullets -->
+<section class="slide" data-id="s009" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 9: 6주 흐름">
+  <div class="slide-card">
+    <h2 class="slide-title">6주 흐름</h2>
+    <p class="slide-subtitle">매주 GitHub에 흔적</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">1주 후보 3 + 팀 헌법</li>
+      <li data-step="1">2주 팀 저장소 + 첫 머지</li>
+      <li data-step="2">3주 LICENSE + Templates</li>
+      <li data-step="3">4주 본격 PR + AI 로그</li>
+      <li data-step="4">5주 멀티 에이전트 PR / 6주 발표</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s009.jpg" alt="여섯 단의 빛 계단" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s010 data — 평가 비중 -->
+<section class="slide" data-id="s010" data-kind="data" aria-roledescription="slide" aria-label="슬라이드 10: 평가 비중">
+  <div class="slide-card">
+    <h2 class="slide-title">평가 비중</h2>
+    <p class="slide-subtitle">100점 분배</p>
+    <div class="data-grid">
+      <div class="data-cell" data-step="0"><div class="num">20</div><div class="label">OSS 이해도</div></div>
+      <div class="data-cell" data-step="1"><div class="num">20</div><div class="label">GitHub 협업</div></div>
+      <div class="data-cell" data-step="2"><div class="num">25</div><div class="label">실제 기여</div></div>
+      <div class="data-cell" data-step="3"><div class="num">20 / 15</div><div class="label">AI 활용 / 발표</div></div>
+    </div>
+    <figure class="slide-image"><img src="assets/img/s010.jpg" alt="다섯 색의 부드러운 막대 차트" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s011 quote -->
+<section class="slide" data-id="s011" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 11: AI는 검증">
+  <div class="slide-card">
+    <h2 class="slide-title">AI는 ‘검증’</h2>
+    <ul class="slide-body">
+      <li>“썼는가”가 아니라</li>
+      <li>“사용하고 사람이 검증했는가”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s012 section · 2025 풍경 -->
+<section class="slide" data-id="s012" data-kind="section" data-section="landscape" aria-roledescription="slide" aria-label="슬라이드 12: 2025 풍경">
+  <figure class="slide-image"><img src="assets/img/s012.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 2 · 0:06 — 0:16</div>
+    <h2 class="slide-title">2025 풍경</h2>
+    <p class="slide-subtitle">한 페이지로 보는 오늘</p>
+    <ul class="slide-body"><li>Octoverse 2025가 보여주는 세 가지 변화</li></ul>
+  </div>
+</section>
+
+<!-- s013 quote -->
+<section class="slide" data-id="s013" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 13: Octoverse 헤드라인">
+  <div class="slide-card">
+    <h2 class="slide-title">Octoverse</h2>
+    <p class="slide-subtitle">2025-10-28 헤드라인</p>
+    <ul class="slide-body">
+      <li>“1초마다 신규 개발자 1명이</li>
+      <li>GitHub에 가입한다”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s014 data -->
+<section class="slide" data-id="s014" data-kind="data" aria-roledescription="slide" aria-label="슬라이드 14: 세 숫자">
+  <div class="slide-card">
+    <h2 class="slide-title">세 숫자</h2>
+    <p class="slide-subtitle">기억할 헤드라인</p>
+    <div class="data-grid">
+      <div class="data-cell" data-step="0"><div class="num">36M+</div><div class="label">신규 개발자 (2025)</div></div>
+      <div class="data-cell" data-step="1"><div class="num">#1</div><div class="label">TypeScript, 1위 언어</div></div>
+      <div class="data-cell" data-step="2"><div class="num">1M+</div><div class="label">Copilot 에이전트 PR (5개월)</div></div>
+    </div>
+    <figure class="slide-image"><img src="assets/img/s014.jpg" alt="안개 속 부유하는 세 개의 반투명 숫자 구체" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s015 concept · 변화 ① -->
+<section class="slide" data-id="s015" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 15: 변화 1 AI 에이전트">
+  <div class="slide-card">
+    <h2 class="slide-title">변화 ①</h2>
+    <p class="slide-subtitle">AI / 에이전트</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">보조 도구를 넘어 협업 과정 안으로</li>
+      <li data-step="1">PR 본문 설명 · 변경 제안</li>
+      <li data-step="2">리뷰 초안 작성</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s015.jpg" alt="사람과 빛의 도형이 함께 작업하는 모습" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s016 concept · 변화 ② -->
+<section class="slide" data-id="s016" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 16: 변화 2 신규 개발자">
+  <div class="slide-card">
+    <h2 class="slide-title">변화 ②</h2>
+    <p class="slide-subtitle">신규 개발자 유입</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">“시간 많은 고수만의 영역” 시대 끝</li>
+      <li data-step="1">매일 새로 들어오는 신규 개발자</li>
+      <li data-step="2">오픈소스 진입장벽이 빠르게 낮아짐</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s016.jpg" alt="빛의 문으로 흘러 들어가는 작은 형상들" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s017 concept · 변화 ③ -->
+<section class="slide" data-id="s017" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 17: 변화 3 타입 언어">
+  <div class="slide-card">
+    <h2 class="slide-title">변화 ③</h2>
+    <p class="slide-subtitle">타입 언어 확산</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">TypeScript의 1위 부상</li>
+      <li data-step="1">AI 시대에는 명시적 구조가 중요</li>
+      <li data-step="2">검증 가능한 코드가 더 강해진다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s017.jpg" alt="파스텔 건축선으로 그려진 골조" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s018 bullets · 세 변화 묶음 -->
+<section class="slide" data-id="s018" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 18: 세 변화 묶음">
+  <div class="slide-card">
+    <h2 class="slide-title">세 변화 묶음</h2>
+    <p class="slide-subtitle">한눈에</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">① AI 에이전트가 들어왔다</li>
+      <li data-step="1">② 신규 개발자가 쏟아져 들어온다</li>
+      <li data-step="2">③ 타입 언어가 표준이 된다</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s019 compare -->
+<section class="slide" data-id="s019" data-kind="compare" aria-roledescription="slide" aria-label="슬라이드 19: 과거 vs AI - 목적·참여자">
+  <div class="slide-card">
+    <h2 class="slide-title">과거 vs AI</h2>
+    <p class="slide-subtitle">목적 · 참여자</p>
+    <div class="compare-grid">
+      <div class="compare-col past" data-step="0">
+        <div class="col-label">과거</div>
+        <p class="col-text">목적: 비용·자유<br>참여자: 고수·학자·회사</p>
+      </div>
+      <div class="compare-col future" data-step="1">
+        <div class="col-label">AI 시대</div>
+        <p class="col-text">목적: 학습·협업·커리어·제품<br>참여자: 매일 신규 개발자</p>
+      </div>
+    </div>
+    <figure class="slide-image"><img src="assets/img/s019.jpg" alt="안개 정원과 빛의 마당이 빛 다리로 연결된 풍경" loading="lazy" width="1792" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s020 compare -->
+<section class="slide" data-id="s020" data-kind="compare" aria-roledescription="slide" aria-label="슬라이드 20: 과거 vs AI - 도구·단위·검증">
+  <div class="slide-card">
+    <h2 class="slide-title">과거 vs AI</h2>
+    <p class="slide-subtitle">도구 · 단위 · 검증</p>
+    <div class="compare-grid">
+      <div class="compare-col past" data-step="0">
+        <div class="col-label">과거</div>
+        <p class="col-text">도구: git + IDE<br>단위: 코드<br>검증: 커뮤니티</p>
+      </div>
+      <div class="compare-col future" data-step="1">
+        <div class="col-label">AI 시대</div>
+        <p class="col-text">도구: git + IDE + AI 에이전트<br>단위: 코드 + 데이터 + 모델 + 로그<br>검증: 커뮤니티 + AI + 사람</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- s021 quote · 핵심 메시지 -->
+<section class="slide" data-id="s021" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 21: 오늘의 한 줄">
+  <div class="slide-card">
+    <h2 class="slide-title">오늘의 한 줄</h2>
+    <ul class="slide-body">
+      <li>오픈소스는 코드 공개가 아니라</li>
+      <li>AI 시대의 학습·협업·</li>
+      <li>커리어·제품 확산 방식이다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s021.jpg" alt="잔잔한 그라디언트 하늘에 펼쳐진 빛의 리본" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s022 activity · 30초 페어 -->
+<section class="slide" data-id="s022" data-kind="activity" aria-roledescription="slide" aria-label="슬라이드 22: 30초 페어">
+  <div class="slide-card">
+    <h2 class="slide-title">30초 페어</h2>
+    <p class="slide-subtitle">옆사람과</p>
+    <ul class="slide-body">
+      <li>직접 git clone 해본 OSS가 있는가?</li>
+      <li>있으면 그 이름은?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s023 worksheet · 데이터 메모 -->
+<section class="slide" data-id="s023" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 23: 데이터 메모">
+  <div class="slide-card">
+    <h2 class="slide-title">데이터 메모</h2>
+    <p class="slide-subtitle">핸드아웃 빈칸</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">신규 개발자 ____ M+</li>
+      <li data-step="1">1위 언어 ____</li>
+      <li data-step="2">Copilot 5개월 PR ____ M+</li>
+      <li data-step="3">AI 시대 OSS = ____ 방식</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s024 qa -->
+<section class="slide" data-id="s024" data-kind="qa" aria-roledescription="slide" aria-label="슬라이드 24: Q1">
+  <div class="slide-card">
+    <h2 class="slide-title">Q1</h2>
+    <p class="slide-subtitle">TypeScript 1위 = JS 죽었다?</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">아니다. JS와 TS는 한 가족</li>
+      <li data-step="1">합산하면 여전히 압도적</li>
+      <li data-step="2">→ 타입 명시가 더 중요해졌다는 신호</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s025 qa -->
+<section class="slide" data-id="s025" data-kind="qa" aria-roledescription="slide" aria-label="슬라이드 25: Q2">
+  <div class="slide-card">
+    <h2 class="slide-title">Q2</h2>
+    <p class="slide-subtitle">Copilot 1M PR = 사람보다 많다?</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">아니다. 전체 PR의 일부</li>
+      <li data-step="1">중요한 점은 다른 데 있다</li>
+      <li data-step="2">→ AI가 PR의 주체로 등장했다</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s026 qa -->
+<section class="slide" data-id="s026" data-kind="qa" aria-roledescription="slide" aria-label="슬라이드 26: Q3 Q4 Q5">
+  <div class="slide-card">
+    <h2 class="slide-title">Q3 · Q4 · Q5</h2>
+    <p class="slide-subtitle">왜 / Octoverse 편향 / 한국</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">왜? GitHub URL = 공개 검증된 실력</li>
+      <li data-step="1">Octoverse는 GitHub 1차 자료, 큰 흐름엔 유용</li>
+      <li data-step="2">한국 OSS: NAVER · Kakao · Toss · 당근 활발</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s027 section · 실습 1 -->
+<section class="slide" data-id="s027" data-kind="section" data-section="lab1" aria-roledescription="slide" aria-label="슬라이드 27: 실습 1">
+  <figure class="slide-image"><img src="assets/img/s027.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 3 · 0:16 — 0:36</div>
+    <h2 class="slide-title">실습 1</h2>
+    <p class="slide-subtitle">GitHub Trending 5축 분석</p>
+    <ul class="slide-body"><li>20분 · 페어 1조 · 한 장에 압축</li></ul>
+  </div>
+</section>
+
+<!-- s028 bullets -->
+<section class="slide" data-id="s028" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 28: 실습 개요">
+  <div class="slide-card">
+    <h2 class="slide-title">실습 개요</h2>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">20분 (작업 16 + 갤러리 4)</li>
+      <li data-step="1">난이도 ★★ 입문~초급</li>
+      <li data-step="2">산출물 5축 분석 1장</li>
+      <li data-step="3">팀 단위 페어 2명 1조</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s029 concept · 통찰 한 줄 -->
+<section class="slide" data-id="s029" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 29: 통찰 한 줄">
+  <div class="slide-card">
+    <h2 class="slide-title">통찰 한 줄</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">“별 수가 많다고</li>
+      <li data-step="1">좋은 프로젝트는 아니다”</li>
+      <li data-step="2">→ 5축으로 직접 확인한다</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s030 bullets · 5단계 -->
+<section class="slide" data-id="s030" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 30: 5단계">
+  <div class="slide-card">
+    <h2 class="slide-title">5단계</h2>
+    <p class="slide-subtitle">20분 진행</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">1) 페어 짝짓기 + Trending 1분</li>
+      <li data-step="1">2) 분석 대상 1개 선택 2분</li>
+      <li data-step="2">3) 5축 분석 10분</li>
+      <li data-step="3">4) 한 장 정리 3분</li>
+      <li data-step="4">5) 갤러리 워크 4분</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s030.jpg" alt="잔잔한 못의 다섯 디딤돌" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s031 concept · 5축 -->
+<section class="slide" data-id="s031" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 31: 5축">
+  <div class="slide-card">
+    <h2 class="slide-title">5축</h2>
+    <p class="slide-subtitle">한 프로젝트 살아 있는가</p>
+    <ul class="slide-body" data-reveal-steps="2">
+      <li data-step="0">README · Issues · PRs</li>
+      <li data-step="1">Releases · License</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s031.jpg" alt="다섯 꼭짓점에 빛의 횃불이 켜진 펜타곤" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s032 worksheet · 축1 README -->
+<section class="slide" data-id="s032" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 32: 축 1 README">
+  <div class="slide-card">
+    <h2 class="slide-title">축 1 · README</h2>
+    <p class="slide-subtitle">5분 안에 무엇이 보이나</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">한 줄 소개 ____</li>
+      <li data-step="1">설치/시작 위치 ☐상단 ☐중간 ☐없음</li>
+      <li data-step="2">데모/스크린샷 ☐있음 ☐없음</li>
+      <li data-step="3">기여 가이드 링크 ☐CONTRIBUTING ☐없음</li>
+      <li data-step="4">평가 ★~★★★★★ ____</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s033 worksheet · 축2 Issues -->
+<section class="slide" data-id="s033" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 33: 축 2 Issues">
+  <div class="slide-card">
+    <h2 class="slide-title">축 2 · Issues</h2>
+    <p class="slide-subtitle">활동성 신호</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">열린/닫힌 수 ____ / ____</li>
+      <li data-step="1">최근 활동 시각 ____</li>
+      <li data-step="2">good-first-issue ☐있음 ____ ☐없음</li>
+      <li data-step="3">자주 보이는 단어 3개 ____</li>
+      <li data-step="4">응답 속도 ☐빠름 ☐보통 ☐느림</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s034 worksheet · 축3 PRs -->
+<section class="slide" data-id="s034" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 34: 축 3 PRs">
+  <div class="slide-card">
+    <h2 class="slide-title">축 3 · PRs</h2>
+    <p class="slide-subtitle">협업 패턴</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">열린/머지 PR 수 ____ / ____</li>
+      <li data-step="1">최근 머지 1개 제목 ____</li>
+      <li data-step="2">PR 본문에 있는 것:</li>
+      <li data-step="3">☐변경 요약 ☐이슈 링크</li>
+      <li data-step="4">☐스크린샷 ☐체크리스트</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s035 worksheet · 축4 Releases -->
+<section class="slide" data-id="s035" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 35: 축 4 Releases">
+  <div class="slide-card">
+    <h2 class="slide-title">축 4 · Releases</h2>
+    <p class="slide-subtitle">유지보수의 흔적</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">최신 버전/일자 ____ / ____</li>
+      <li data-step="1">changelog ☐있음 ☐없음</li>
+      <li data-step="2">노트 깊이:</li>
+      <li data-step="3">☐한 줄 ☐변경 요약</li>
+      <li data-step="4">☐마이그레이션까지</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s036 worksheet · 축5 License -->
+<section class="slide" data-id="s036" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 36: 축 5 License">
+  <div class="slide-card">
+    <h2 class="slide-title">축 5 · License</h2>
+    <p class="slide-subtitle">쓸 수 있는가</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">LICENSE 위치 ☐루트 ☐다른 폴더 ☐없음</li>
+      <li data-step="1">라이선스 종류 ____</li>
+      <li data-step="2">회사 제품에 써도 되나?</li>
+      <li data-step="3">1줄로 요약 ____</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s037 worksheet · 종합 -->
+<section class="slide" data-id="s037" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 37: 종합 한 줄">
+  <div class="slide-card">
+    <h2 class="slide-title">종합 한 줄</h2>
+    <p class="slide-subtitle">5축 → 결론</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">이 프로젝트는 ____</li>
+      <li data-step="1">6주 후보로 적합? ☐예 ☐아니오</li>
+      <li data-step="2">그 이유 ____</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s038 concept · 예시 ruff -->
+<section class="slide" data-id="s038" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 38: 예시 ruff">
+  <div class="slide-card">
+    <h2 class="slide-title">예시 — astral-sh/ruff</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">Python 린터 + 포매터</li>
+      <li data-step="1">Rust로 작성, 매우 빠름</li>
+      <li data-step="2">MIT, CHANGELOG 모범</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s038.jpg" alt="가속하는 파스텔 화살표들" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s039 data · ruff 5축 -->
+<section class="slide" data-id="s039" data-kind="data" aria-roledescription="slide" aria-label="슬라이드 39: ruff 5축">
+  <div class="slide-card">
+    <h2 class="slide-title">ruff 5축</h2>
+    <p class="slide-subtitle">체크 결과</p>
+    <div class="data-grid">
+      <div class="data-cell" data-step="0"><div class="num">★★★★★</div><div class="label">README — 설치 한 줄 + 벤치</div></div>
+      <div class="data-cell" data-step="1"><div class="num">★★★★☆</div><div class="label">Issues — good-first 있음</div></div>
+      <div class="data-cell" data-step="2"><div class="num">★★★★★</div><div class="label">PRs — 본문 패턴 일정</div></div>
+      <div class="data-cell" data-step="3"><div class="num">★★★★★</div><div class="label">Releases — CHANGELOG + 마이그</div></div>
+      <div class="data-cell" data-step="4"><div class="num">★★★★★</div><div class="label">License — MIT, 거의 자유</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- s040 concept · 예시 종합 -->
+<section class="slide" data-id="s040" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 40: 예시 종합">
+  <div class="slide-card">
+    <h2 class="slide-title">예시 종합</h2>
+    <p class="slide-subtitle">ruff</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">6주 후보 적합</li>
+      <li data-step="1">docs PR / 작은 룰 추가 진입 가능</li>
+      <li data-step="2">응답 빠름</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s041 bullets · 추천 풀 ① -->
+<section class="slide" data-id="s041" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 41: 추천 풀 1">
+  <div class="slide-card">
+    <h2 class="slide-title">추천 풀 ①</h2>
+    <p class="slide-subtitle">웹 · AI 프레임워크</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">vercel/next.js — 웹 / MIT</li>
+      <li data-step="1">huggingface/transformers — Apache-2.0</li>
+      <li data-step="2">langchain-ai/langchain — AI / MIT</li>
+      <li data-step="3">tldraw/tldraw — 캔버스 / 부분 OSS</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s041.jpg" alt="네 장의 부드러운 파스텔 카드가 둥근 호를 이루는 모습" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s042 bullets · 추천 풀 ② -->
+<section class="slide" data-id="s042" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 42: 추천 풀 2">
+  <div class="slide-card">
+    <h2 class="slide-title">추천 풀 ②</h2>
+    <p class="slide-subtitle">도구 · 한국 OSS</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">astral-sh/uv — Python 도구 / MIT</li>
+      <li data-step="1">astral-sh/ruff — 린터 / MIT</li>
+      <li data-step="2">denoland/deno — 런타임 / MIT</li>
+      <li data-step="3">toss/es-toolkit — JS 유틸 / MIT (한국)</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s042.jpg" alt="작은 파스텔 도구상자들" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s043 bullets · 막혔을 때 ① -->
+<section class="slide" data-id="s043" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 43: 막혔을 때 1">
+  <div class="slide-card">
+    <h2 class="slide-title">막혔을 때 ①</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">외국어/낯선 프로젝트 → 추천 풀 1개</li>
+      <li data-step="1">README 너무 길 → TL;DR + Getting Started만</li>
+      <li data-step="2">이슈 너무 많음 → 최근 1주 10개만</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s044 bullets · 막혔을 때 ② -->
+<section class="slide" data-id="s044" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 44: 막혔을 때 2">
+  <div class="slide-card">
+    <h2 class="slide-title">막혔을 때 ②</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">Rate Limit → 로그인 후 재시도</li>
+      <li data-step="1">안 되면 옆 페어 화면 함께</li>
+      <li data-step="2">관심 분야 다름 → 한 명 분야로 진행</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s045 activity · 지금 시작 -->
+<section class="slide" data-id="s045" data-kind="activity" aria-roledescription="slide" aria-label="슬라이드 45: 지금 시작">
+  <div class="slide-card">
+    <h2 class="slide-title">지금 시작</h2>
+    <p class="slide-subtitle">16분 작업 타이머</p>
+    <ul class="slide-body">
+      <li>https://github.com/trending</li>
+      <li>All languages, Today 탭</li>
+      <li>한 명은 노트북 / 한 명은 핸드아웃</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s045.jpg" alt="16분에 멈춘 부드러운 아날로그 스톱워치" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s046 activity · 정리 -->
+<section class="slide" data-id="s046" data-kind="activity" aria-roledescription="slide" aria-label="슬라이드 46: 정리">
+  <div class="slide-card">
+    <h2 class="slide-title">정리</h2>
+    <p class="slide-subtitle">한 장에 압축</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">포스트잇 또는 1슬라이드</li>
+      <li data-step="1">5축 핵심 발견만 골라</li>
+      <li data-step="2">3분 안에 정리</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s047 activity · 갤러리 워크 -->
+<section class="slide" data-id="s047" data-kind="activity" aria-roledescription="slide" aria-label="슬라이드 47: 갤러리 워크">
+  <div class="slide-card">
+    <h2 class="slide-title">갤러리 워크</h2>
+    <p class="slide-subtitle">4분</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">근처 페어 자료 둘러보기</li>
+      <li data-step="1">내 프로젝트와 가장 다른 점 1개 메모</li>
+      <li data-step="2">한 팀 30초 인상 깊은 점 공유</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s047.jpg" alt="좁은 갤러리 복도의 파스텔 액자들" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s048 concept · 시간 남으면 -->
+<section class="slide" data-id="s048" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 48: 시간 남으면">
+  <div class="slide-card">
+    <h2 class="slide-title">시간 남으면</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">2번째 프로젝트 5분 빠른 비교</li>
+      <li data-step="1">별 수 / 활동성 비율 같은</li>
+      <li data-step="2">자기만의 지표 만들기</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s049 concept · 한 줄 정의 -->
+<section class="slide" data-id="s049" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 49: 한 줄 정의">
+  <div class="slide-card">
+    <h2 class="slide-title">한 줄 정의</h2>
+    <p class="slide-subtitle">오늘 등장한 용어</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">Octoverse: GitHub 연 1회 1차 데이터</li>
+      <li data-step="1">Trending: 오늘 커뮤니티의 흥미</li>
+      <li data-step="2">OSS: 사용·수정·배포·기여 허용 SW</li>
+      <li data-step="3">AI 코딩 에이전트: 직접 작업 진행</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s049.jpg" alt="잔잔한 그라디언트 벌판 위 사전식 카드들" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s050 quote · 5축 회고 -->
+<section class="slide" data-id="s050" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 50: 5축 회고">
+  <div class="slide-card">
+    <h2 class="slide-title">5축 회고</h2>
+    <ul class="slide-body">
+      <li>“이 프로젝트가</li>
+      <li>살아 있는가”의 신호를</li>
+      <li>한 번 직접 본 사람</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s051 section · 전이 -->
+<section class="slide" data-id="s051" data-kind="section" data-section="bridge" aria-roledescription="slide" aria-label="슬라이드 51: 전이">
+  <figure class="slide-image"><img src="assets/img/s051.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 4 · 0:36 — 0:38</div>
+    <h2 class="slide-title">전이</h2>
+    <p class="slide-subtitle">시선의 속도를 올린다</p>
+    <ul class="slide-body"><li>다음 12분: AI로 더 빠르게 신호를 뽑는다</li></ul>
+  </div>
+</section>
+
+<!-- s052 quote -->
+<section class="slide" data-id="s052" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 52: 기억할 한 문장">
+  <div class="slide-card">
+    <h2 class="slide-title">기억할 한 문장</h2>
+    <ul class="slide-body">
+      <li>“사람이 검증하지 않은 AI 답은</li>
+      <li>단지 ‘그럴듯한 텍스트’일 뿐이다”</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s052.jpg" alt="텍스트 모양 파스텔 리본 위 돋보기" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s053 section · AI 도구 -->
+<section class="slide" data-id="s053" data-kind="section" data-section="ai-tools" aria-roledescription="slide" aria-label="슬라이드 53: AI 도구">
+  <figure class="slide-image"><img src="assets/img/s053.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 5 · 0:38 — 0:48</div>
+    <h2 class="slide-title">AI 도구</h2>
+    <p class="slide-subtitle">도구 풍경 + 후보 분석</p>
+    <ul class="slide-body"><li>AI는 답이 아니라 시선의 속도를 올린다</li></ul>
+  </div>
+</section>
+
+<!-- s054 concept -->
+<section class="slide" data-id="s054" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 54: AI가 바꾸는 것">
+  <div class="slide-card">
+    <h2 class="slide-title">AI가 바꾸는 것</h2>
+    <p class="slide-subtitle">OSS 협업의 진입장벽</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">저장소 읽고 README 요약</li>
+      <li data-step="1">이슈 분류 / PR 본문 초안</li>
+      <li data-step="2">단, 사람 검증 없이는 텍스트일 뿐</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s054.jpg" alt="장벽이 부드러운 경사로 변하는 모습" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s055 bullets · 도구① 클로즈드 -->
+<section class="slide" data-id="s055" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 55: 도구 1 클로즈드">
+  <div class="slide-card">
+    <h2 class="slide-title">도구 ① 클로즈드</h2>
+    <p class="slide-subtitle">학생 무료 옵션</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">GitHub Copilot — Free / Student Pack</li>
+      <li data-step="1">Claude · Claude Code — 웹 무료 티어</li>
+      <li data-step="2">Cursor — 무료 티어</li>
+      <li data-step="3">Gemini Code Assist — 개인 무료</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s056 bullets · 도구② OSS -->
+<section class="slide" data-id="s056" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 56: 도구 2 OSS">
+  <div class="slide-card">
+    <h2 class="slide-title">도구 ② OSS</h2>
+    <p class="slide-subtitle">완전 무료</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">Continue.dev — Apache-2.0</li>
+      <li data-step="1">· BYOM 실험에 좋음</li>
+      <li data-step="2">Aider — Apache-2.0</li>
+      <li data-step="3">· CLI 기반 코드 수정 자동화</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s056.jpg" alt="잔잔한 그라디언트 바다를 떠가는 종이배" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s057 bullets · 6주 학습 경로 -->
+<section class="slide" data-id="s057" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 57: 6주 학습 경로">
+  <div class="slide-card">
+    <h2 class="slide-title">6주 학습 경로</h2>
+    <p class="slide-subtitle">도구 1개 → 깊게</p>
+    <ul class="slide-body" data-reveal-steps="5">
+      <li data-step="0">1주 Copilot Free + Claude 웹</li>
+      <li data-step="1">2주 PR 본문 자동 생성</li>
+      <li data-step="2">3주 라이선스 AI 질문 + 원문 대조</li>
+      <li data-step="3">4주 Claude Code or Cursor 깊게</li>
+      <li data-step="4">5주 Continue/Aider 체험 / 6주 졸업</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s058 code · 후보 분석 프롬프트 -->
+<section class="slide" data-id="s058" data-kind="code" aria-roledescription="slide" aria-label="슬라이드 58: 후보 분석 프롬프트">
+  <div class="slide-card">
+    <h2 class="slide-title">후보 분석 프롬프트</h2>
+    <p class="slide-subtitle">지금 30초 시연</p>
+    <pre class="code-block">다음 GitHub 저장소의 README를 보고 답해줘.
+1) 한 줄 요약
+2) 처음 기여하려는 사람 진입점 3개
+   (이슈 라벨 / 문서 보강 / 작은 버그 수정)
+
+저장소: [앞 실습 URL]
+README:
+[README 본문 또는 핵심 단락]</pre>
+  </div>
+</section>
+
+<!-- s059 worksheet · AI 사용 로그 -->
+<section class="slide" data-id="s059" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 59: AI 사용 로그">
+  <div class="slide-card">
+    <h2 class="slide-title">AI 사용 로그</h2>
+    <p class="slide-subtitle">오늘 처음 노출</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">단계 / AI 도구 / 프롬프트 한 줄</li>
+      <li data-step="1">AI 출력 한 줄</li>
+      <li data-step="2">사람이 검증한 것</li>
+      <li data-step="3">결과: 채택 / 수정 / 기각</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s060 concept · 왜 로그? -->
+<section class="slide" data-id="s060" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 60: 왜 로그">
+  <div class="slide-card">
+    <h2 class="slide-title">왜 로그?</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">“썼는가”는 평가 기준이 아니다</li>
+      <li data-step="1">“검증했는가”가 기준</li>
+      <li data-step="2">→ 로그는 검증의 증거</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s061 bullets · 검증 5축 ① -->
+<section class="slide" data-id="s061" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 61: 검증 5축 1">
+  <div class="slide-card">
+    <h2 class="slide-title">검증 5축 ①</h2>
+    <p class="slide-subtitle">사람이 확인할 것</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">1) 추천 라벨이 실제로 존재하는가</li>
+      <li data-step="1">2) “응답 빠름” → 최근 1주 댓글 있는가</li>
+      <li data-step="2">3) “좋은 진입점” → 24~48h 크기인가</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s062 bullets · 검증 5축 ② -->
+<section class="slide" data-id="s062" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 62: 검증 5축 2">
+  <div class="slide-card">
+    <h2 class="slide-title">검증 5축 ②</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">4) AI 답에 출처 URL이 함께 나오는가</li>
+      <li data-step="1">5) 라이선스를 잘못 답하지 않았는가</li>
+      <li data-step="2">→ 다섯 모두 본 뒤 채택</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s063 worksheet · 도구 선택 -->
+<section class="slide" data-id="s063" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 63: 도구 선택">
+  <div class="slide-card">
+    <h2 class="slide-title">도구 선택</h2>
+    <p class="slide-subtitle">1분 결정</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">1회차 끝까지 손에 쥘 1개:</li>
+      <li data-step="1">☐ Copilot Free ☐ Claude</li>
+      <li data-step="2">☐ Cursor ☐ Gemini</li>
+      <li data-step="3">다음 주까지 시도할 작업 1줄 ____</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s063.jpg" alt="네 개의 빛 구체에서 하나를 선택하는 손" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s064 quote · 도구 결정 원칙 -->
+<section class="slide" data-id="s064" data-kind="quote" aria-roledescription="slide" aria-label="슬라이드 64: 도구 결정 원칙">
+  <div class="slide-card">
+    <h2 class="slide-title">도구 결정 원칙</h2>
+    <ul class="slide-body">
+      <li>“많이 시도하지 말고</li>
+      <li>하나를 손에 잡아라”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s065 concept · AI 도구 마무리 -->
+<section class="slide" data-id="s065" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 65: AI 도구 마무리">
+  <div class="slide-card">
+    <h2 class="slide-title">AI 도구 마무리</h2>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">AI는 시선의 속도</li>
+      <li data-step="1">사람은 검증의 정확도</li>
+      <li data-step="2">둘이 만나야 PR이 된다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s065.jpg" alt="교차하는 두 빛의 길이 만들어내는 부드러운 십자" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s066 section · 팀 헌법 -->
+<section class="slide" data-id="s066" data-kind="section" data-section="team" aria-roledescription="slide" aria-label="슬라이드 66: 팀 헌법">
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 6 · 0:48 — 0:54</div>
+    <h2 class="slide-title">팀 헌법</h2>
+    <p class="slide-subtitle">6분 1페이지</p>
+    <ul class="slide-body"><li>3~5인 + 약속 4항목</li></ul>
+  </div>
+</section>
+
+<!-- s067 bullets · 활동 개요 -->
+<section class="slide" data-id="s067" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 67: 활동 개요">
+  <div class="slide-card">
+    <h2 class="slide-title">활동 개요</h2>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">6분 (결성 2 + 작성 4)</li>
+      <li data-step="1">난이도 ★ 입문</li>
+      <li data-step="2">산출물 팀명 + 헌법 1장</li>
+      <li data-step="3">4항목: 역할 / 회의 / 의사결정 / 이탈</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s068 bullets · 4단계 진행 -->
+<section class="slide" data-id="s068" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 68: 4단계 진행">
+  <div class="slide-card">
+    <h2 class="slide-title">4단계 진행</h2>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">1) 관심 도메인 그룹 1분</li>
+      <li data-step="1">2) 3~5인 결성 1분 (PR 경험자 1↑)</li>
+      <li data-step="2">3) 팀명 정하기 10초</li>
+      <li data-step="3">4) 헌법 1페이지 4분</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s068.jpg" alt="네 개의 원이 가까워져 하나의 중심을 이루는 모습" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s069 worksheet · 헌법① 역할 -->
+<section class="slide" data-id="s069" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 69: 헌법 1 역할">
+  <div class="slide-card">
+    <h2 class="slide-title">헌법 ① 역할</h2>
+    <p class="slide-subtitle">잠정, 2회차에 확정</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">Maintainer (리더/의사결정 진행) ____</li>
+      <li data-step="1">Contributor (코드/내용 주력) ____</li>
+      <li data-step="2">Docs (문서·발표) ____</li>
+      <li data-step="3">AI / Automation (AI 로그 책임) ____</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s070 worksheet · 헌법② 회의 -->
+<section class="slide" data-id="s070" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 70: 헌법 2 회의">
+  <div class="slide-card">
+    <h2 class="slide-title">헌법 ② 회의</h2>
+    <p class="slide-subtitle">주기와 채널</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">주 ___회 / ___시 ~ ___시</li>
+      <li data-step="1">장소 또는 비대면 도구 ____</li>
+      <li data-step="2">비동기 채널 ____</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s071 worksheet · 헌법③ 의결 -->
+<section class="slide" data-id="s071" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 71: 헌법 3 의결">
+  <div class="slide-card">
+    <h2 class="slide-title">헌법 ③ 의결</h2>
+    <p class="slide-subtitle">의사결정</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">만장일치 / 다수결 / 메인테이너 결정</li>
+      <li data-step="1">비동기 의사결정 채널 ____</li>
+      <li data-step="2">SLA 예) 24h 내 답 없으면 패스</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s072 worksheet · 헌법④ 이탈 -->
+<section class="slide" data-id="s072" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 72: 헌법 4 이탈">
+  <div class="slide-card">
+    <h2 class="slide-title">헌법 ④ 이탈</h2>
+    <p class="slide-subtitle">갈등 처리</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">이탈 시: 합병 / 솔로팀 / 신규 충원</li>
+      <li data-step="1">갈등 1차 처리 ____</li>
+      <li data-step="2">미해결 시 → 멘토 상신</li>
+      <li data-step="3">한 줄 비전 (6주 후 자랑) ____</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s072.jpg" alt="떨어지는 구체를 받치는 부드러운 안전망" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s073 bullets · 체크리스트 -->
+<section class="slide" data-id="s073" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 73: 체크리스트">
+  <div class="slide-card">
+    <h2 class="slide-title">체크리스트</h2>
+    <p class="slide-subtitle">마무리 전 확인</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">팀 인원 3~5명</li>
+      <li data-step="1">PR 경험자 1명 이상</li>
+      <li data-step="2">팀명·헌법 4항목 채워짐</li>
+      <li data-step="3">전원 서명 / 한 줄 비전 적힘</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s074 bullets · 막혔을 때 -->
+<section class="slide" data-id="s074" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 74: 막혔을 때">
+  <div class="slide-card">
+    <h2 class="slide-title">막혔을 때</h2>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">한 영역 몰림 → 더 작은 주제로 분할</li>
+      <li data-step="1">PR 경험자 없음 → 다음 주 천천히</li>
+      <li data-step="2">1~2명뿐 → 가까운 팀과 합병</li>
+      <li data-step="3">4분 안 됨 → 잠정안 + 다음 주 확정</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s075 section · 마무리 -->
+<section class="slide" data-id="s075" data-kind="section" data-section="closing" aria-roledescription="slide" aria-label="슬라이드 75: 마무리">
+  <figure class="slide-image"><img src="assets/img/s075.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <div class="chapter-tag">Chapter 7 · 0:54 — 1:00</div>
+    <h2 class="slide-title">마무리</h2>
+    <p class="slide-subtitle">KPT + 다음 주</p>
+    <ul class="slide-body"><li>오늘 한 일: 후보 3개를 손에 쥐었다</li></ul>
+  </div>
+</section>
+
+<!-- s076 worksheet · KPT -->
+<section class="slide" data-id="s076" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 76: KPT 회고">
+  <div class="slide-card">
+    <h2 class="slide-title">KPT 회고</h2>
+    <p class="slide-subtitle">5분</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">K (Keep) 잘된 것 ____</li>
+      <li data-step="1">P (Problem) 막힌 것 ____</li>
+      <li data-step="2">T (Try) 다음 시도 ____</li>
+      <li data-step="3">오늘 GitHub에 남긴 흔적 URL ____</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s076.jpg" alt="코르크 벽에 핀으로 꽂힌 세 장의 파스텔 포스트잇" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s077 concept · 다음 주 -->
+<section class="slide" data-id="s077" data-kind="concept" aria-roledescription="slide" aria-label="슬라이드 77: 다음 주">
+  <div class="slide-card">
+    <h2 class="slide-title">다음 주</h2>
+    <p class="slide-subtitle">2회차 5/7 목 19:00</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">OSS의 기본 언어:</li>
+      <li data-step="1">Issue · Branch · Commit · PR · Review</li>
+      <li data-step="2">→ 후보 1개에 깃발을 꽂는다</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s077.jpg" alt="첫 빛 받는 작은 언덕에 꽂힌 파스텔 깃발" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s078 bullets · 사전 준비 -->
+<section class="slide" data-id="s078" data-kind="bullets" aria-roledescription="slide" aria-label="슬라이드 78: 사전 준비">
+  <div class="slide-card">
+    <h2 class="slide-title">사전 준비</h2>
+    <p class="slide-subtitle">다음 주까지</p>
+    <ul class="slide-body" data-reveal-steps="3">
+      <li data-step="0">후보 1개를 가족·친구에게 1분 설명</li>
+      <li data-step="1">git clone 가능한 환경 확인</li>
+      <li data-step="2">AI 도구 1개 손에 잡혀 있음</li>
+    </ul>
+  </div>
+</section>
+
+<!-- s079 worksheet · 약속 카드 -->
+<section class="slide" data-id="s079" data-kind="worksheet" aria-roledescription="slide" aria-label="슬라이드 79: 약속 카드">
+  <div class="slide-card">
+    <h2 class="slide-title">약속 카드</h2>
+    <p class="slide-subtitle">팀 단위 / 다음 주 시작 전</p>
+    <ul class="slide-body" data-reveal-steps="4">
+      <li data-step="0">1) 후보 1개 더 깊이 (10분)</li>
+      <li data-step="1">2) 팀 저장소 미리 (선택)</li>
+      <li data-step="2">3) AI 사용 로그 1행 추가</li>
+      <li data-step="3">차단 요인 / 비동기 채널 ____</li>
+    </ul>
+    <figure class="slide-image"><img src="assets/img/s079.jpg" alt="깨끗한 표면 위 세 줄의 가는 선이 그려진 인덱스 카드" loading="lazy" width="1024" height="1024"></figure>
+  </div>
+</section>
+
+<!-- s080 closing -->
+<section class="slide" data-id="s080" data-kind="closing" data-section="closing" aria-roledescription="slide" aria-label="슬라이드 80: 다음 주에">
+  <figure class="slide-image"><img src="assets/img/s080.jpg" alt="" loading="lazy" width="1792" height="1024"></figure>
+  <div class="slide-card">
+    <h2 class="slide-title">다음 주에</h2>
+    <p class="slide-subtitle">첫 깃발을 꽂읍시다</p>
+    <ul class="slide-body">
+      <li>오픈소스는 코드 공개가 아니라</li>
+      <li>AI 시대의 학습·협업·</li>
+      <li>커리어·제품 확산 방식이다</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- 푸터 -->
+<footer class="app-footer" role="contentinfo">
+  <span class="track" data-role="track">1회차 · AI 시대의 오픈소스</span>
+  <span class="counter" data-role="counter"><strong>1</strong> / 80 · <span data-role="counter-pct">0%</span></span>
+</footer>
+
+<!-- 점프 메뉴 -->
+<div class="jump-menu" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jm-title">
+  <div class="jump-menu-panel">
+    <h2 id="jm-title">
+      슬라이드 점프 <small style="font-weight:400;color:var(--text-muted);font-size:13px;">(M으로 토글)</small>
+      <button class="close-btn" aria-label="메뉴 닫기">×</button>
+    </h2>
+    <div class="jump-section-row" aria-label="섹션으로 점프"></div>
+    <div class="jump-grid" role="list" aria-label="80장 슬라이드 그리드"></div>
+    <div class="jump-legend">
+      <span><span class="legend-dot now"></span>현재</span>
+      <span><span class="legend-dot section"></span>섹션 시작</span>
+    </div>
+    <div class="shortcut-hints">
+      <span><kbd>→</kbd> <kbd>Space</kbd> 다음</span>
+      <span><kbd>←</kbd> 이전</span>
+      <span><kbd>F</kbd> 풀스크린</span>
+      <span><kbd>T</kbd> 다크/라이트</span>
+      <span><kbd>M</kbd> 메뉴</span>
+      <span><kbd>Home</kbd> / <kbd>End</kbd> 처음/끝</span>
+      <span><kbd>숫자+Enter</kbd> 점프</span>
+    </div>
+  </div>
+</div>
+
+<!-- 숫자 입력 표시 -->
+<div class="digit-buffer" aria-hidden="true">
+  → <span class="digits"></span> <span style="color:var(--text-muted);font-size:12px;">+ Enter</span>
+</div>
+
+<!-- 슬라이드 메타데이터 (JS 사용) -->
+<script>
+  window.__SLIDE_META__ = {
+    track: '1회차 · AI 시대의 오픈소스',
+    sectionDividers: ['s002','s012','s027','s051','s053','s066','s075'],
+    sectionTitles: {
+      's002':'도입',
+      's012':'2025 풍경',
+      's027':'실습 1',
+      's051':'전이',
+      's053':'AI 도구',
+      's066':'팀 헌법',
+      's075':'마무리'
+    }
+  };
+</script>
+<script src="assets/js/slides.js" defer></script>
+</body>
+</html>
